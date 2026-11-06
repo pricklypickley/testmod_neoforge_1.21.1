@@ -1,6 +1,6 @@
 {
-  "item.gmodetestmodneoforge.steelingot": "Steel Ingot"
+  "item.gmodetestmodneoforge.steel_ingot": "Steel Ingot",
+  "item.gmodetestmodneoforge.aluminum_ingot": "Aluminum Ingot",
 
-
-
+  "block.gmodetestmodneoforge.steel_block": "Steel Block"
 }

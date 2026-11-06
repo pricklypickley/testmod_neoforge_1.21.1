@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "gmodetestmodneoforge:item/steelingot"
+    "layer0": "gmodetestmodneoforge:item/aluminum_ingot"
   }
 }

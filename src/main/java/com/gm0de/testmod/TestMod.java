@@ -1,5 +1,6 @@
 package com.gm0de.testmod;
 
+import com.gm0de.testmod.block.ModBlocks;
 import com.gm0de.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class TestMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,7 +53,12 @@ public class TestMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.STEELINGOT);
+            event.accept(ModItems.STEEL_INGOT);
+            event.accept(ModItems.ALUMINUM_INGOT);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.STEEL_BLOCK);
         }
     }
 
